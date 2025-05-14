@@ -7,7 +7,19 @@
     "name": "rust-node-utils",
     "triples": {
       "additional": [
-        "aarch64-apple-darwin"
+        "aarch64-apple-darwin",
+        "aarch64-linux-android",
+        "aarch64-unknown-linux-gnu",
+        "aarch64-unknown-linux-musl",
+        "aarch64-pc-windows-msvc",
+        "armv7-unknown-linux-gnueabihf",
+        "armv7-unknown-linux-musleabihf",
+        "x86_64-unknown-linux-musl",
+        "x86_64-unknown-freebsd",
+        "i686-pc-windows-msvc",
+        "armv7-linux-androideabi",
+        "universal-apple-darwin",
+        "riscv64gc-unknown-linux-gnu"
       ]
     }
   },
@@ -31,11 +43,5 @@
     "universal": "napi universal",
     "version": "napi version"
   },
-  "packageManager": "yarn@4.9.1",
-  "optionalDependencies": {
-    "@cxls/rust-node-utils-win32-x64-msvc": "0.0.2",
-    "@cxls/rust-node-utils-darwin-x64": "0.0.2",
-    "@cxls/rust-node-utils-linux-x64-gnu": "0.0.2",
-    "@cxls/rust-node-utils-darwin-arm64": "0.0.2"
-  }
+  "packageManager": "yarn@4.9.1"
 }
