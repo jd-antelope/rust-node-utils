@@ -1,7 +1,8 @@
 import test from 'ava'
 
-// import { compareVersions } from '../index.js'
+import { compareVersions } from '../index.js'
 
-// test('sum from native', (t) => {
-//   t.is(compareVersions('1.3.1', '1.3.2'), 3)
-// })
+test('sum from native', (t) => {
+  const result = compareVersions('1.0.0', '1.0.1')
+  t.is(result, -1)
+})
