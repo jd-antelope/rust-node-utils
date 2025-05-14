@@ -1,0 +1,15 @@
+{
+  "name": "@cxls/rust-node-utils-darwin-universal",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "main": "rust-node-utils.darwin-universal.node",
+  "files": [
+    "rust-node-utils.darwin-universal.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
