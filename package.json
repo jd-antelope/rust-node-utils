@@ -1,0 +1,41 @@
+{
+  "name": "@cxls/rust-node-utils",
+  "version": "0.0.2",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "rust-node-utils",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin"
+      ]
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.4",
+    "ava": "^6.0.1"
+  },
+  "ava": {
+    "timeout": "3m"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "ava",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "packageManager": "yarn@4.9.1",
+  "optionalDependencies": {
+    "@cxls/rust-node-utils-win32-x64-msvc": "0.0.2",
+    "@cxls/rust-node-utils-darwin-x64": "0.0.2",
+    "@cxls/rust-node-utils-linux-x64-gnu": "0.0.2",
+    "@cxls/rust-node-utils-darwin-arm64": "0.0.2"
+  }
+}
