@@ -1,6 +1,6 @@
 {
   "name": "@cxls/rust-node-utils",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
@@ -43,5 +43,23 @@
     "universal": "napi universal",
     "version": "napi version"
   },
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.1",
+  "optionalDependencies": {
+    "@cxls/rust-node-utils-win32-x64-msvc": "0.0.1",
+    "@cxls/rust-node-utils-darwin-x64": "0.0.1",
+    "@cxls/rust-node-utils-linux-x64-gnu": "0.0.1",
+    "@cxls/rust-node-utils-darwin-arm64": "0.0.1",
+    "@cxls/rust-node-utils-android-arm64": "0.0.1",
+    "@cxls/rust-node-utils-linux-arm64-gnu": "0.0.1",
+    "@cxls/rust-node-utils-linux-arm64-musl": "0.0.1",
+    "@cxls/rust-node-utils-win32-arm64-msvc": "0.0.1",
+    "@cxls/rust-node-utils-linux-arm-gnueabihf": "0.0.1",
+    "@cxls/rust-node-utils-linux-arm-musleabihf": "0.0.1",
+    "@cxls/rust-node-utils-linux-x64-musl": "0.0.1",
+    "@cxls/rust-node-utils-freebsd-x64": "0.0.1",
+    "@cxls/rust-node-utils-win32-ia32-msvc": "0.0.1",
+    "@cxls/rust-node-utils-android-arm-eabi": "0.0.1",
+    "@cxls/rust-node-utils-darwin-universal": "0.0.1",
+    "@cxls/rust-node-utils-linux-riscv64-gnu": "0.0.1"
+  }
 }
